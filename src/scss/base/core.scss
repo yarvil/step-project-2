@@ -1,0 +1,20 @@
+.container {
+  max-width: 1810px;
+  margin-inline: auto;
+
+  @media (min-width: 320px) {
+    padding-inline: 20px;
+  }
+
+  @media (min-width: 768px) {
+    padding-inline: 31px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-inline: 15px;
+  }
+}
+
+body {
+  background-color: $bg-primary;
+}
