@@ -40,7 +40,7 @@ const cssTaskHandler = () => {
 
 const imagesTaskHandler = () => {
   return src("./src/images/**/*.*")
-  //   .pipe(imagemin())
+    .pipe(imagemin())
     .pipe(dest("./dist/images"))
     .pipe(browserSync.stream());
 };
