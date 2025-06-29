@@ -1,6 +1,136 @@
-.test {
-  font-family: $font-secondary;
-  font-weight: 300;
-  text-transform: capitalize;
+.hero__container {
+  text-align: center;
+  padding-bottom: 14px;
 
+  @media (min-width: 768px) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-bottom: 51px;
+  }
+}
+
+.hero__title {
+  margin-block: 0 30px;
+  font-size: clamp(2.25rem, 0.0364rem + 11.068vw, 9.375rem);
+
+  & span {
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+  }
+}
+
+.hero__arrow-img {
+  stroke: $primary-color;
+}
+
+.hero__img-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  @media (min-width: 768px) {
+    height: 741px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 956px;
+  }
+}
+
+.hero__img {
+  max-width: 100%;
+  display: block;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1920px;
+  }
+}
+
+.hero__info {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  border-bottom: 1px solid $primary-color;
+
+  @media (min-width: 1200px) {
+    padding-block: 86px;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 70px;
+  }
+}
+
+.hero__info-text {
+  margin: 0;
+  text-align: center;
+  font-family: $font-secondary;
+  font-weight: $font-weight-light;
+  font-size: clamp(1.25rem, 0.3125rem + 4.6875vw, 2.5625rem);
+  color: $primary-color;
+
+  @media (min-width: 1200px) {
+    font-size: clamp(1.9375rem, -1.2917rem + 4.3056vw, 3.875rem);
+    text-align: justify;
+  }
+
+  & span {
+    font-weight: $font-weight-bold;
+  }
+}
+
+.hero__about {
+  padding-block: 40px;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  gap: 30px 20px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: 1200px) {
+    padding-block: 60px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    background-color: $primary-color;
+
+    @media (min-width: 1200px) {
+      max-width: 485px;
+      left: 59%;
+    }
+  }
+}
+
+.hero__about-title {
+  text-align: end;
+  margin: 0;
+  width: 100%;
+  font-family: $font-secondary;
+  font-weight: $font-weight-medium;
+  font-size: 28px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header__about-img {
+  display: block;
 }

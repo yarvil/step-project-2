@@ -1,0 +1,23 @@
+.logos__container {
+  padding-block: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid $primary-color;
+
+  @media (min-width: 768px) {
+    padding-block: 40px;
+  }
+  @media (min-width: 1200px) {
+    padding-block: 70px;
+    column-gap: 40px;
+  }
+}
+
+.logos__img {
+  padding: 15px 40px;
+  border-radius: 50px;
+  background-color: $link-bg-primary;
+}
