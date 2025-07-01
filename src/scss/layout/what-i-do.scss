@@ -1,0 +1,131 @@
+.what-i-do {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  margin: 0 auto;
+  border-bottom: 1px solid $primary-color;
+  
+  
+
+  &__image {
+    background-image: url('../images/what-i-do-bgd.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  &__content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $secondary-color;
+  }
+
+  &__title {
+    font-size: clamp(3.5625rem, 2.4rem + 5.8125vw, 9.375rem);
+    font-weight: $font-weight-light;
+    text-align: center;
+    margin-bottom: 40px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__item {
+    border-bottom: 1px solid $primary-color;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__item-title {
+    font-family: $font-secondary;
+    font-size: clamp(1.4375rem, 1.175rem + 1.3125vw, 2.75rem);
+    font-weight: $font-weight-bold;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+
+    &::before {
+      content: attr(data-number);
+      font-family: $font-secondary;
+      font-size: clamp(1.4375rem, 1.175rem + 1.3125vw, 2.75rem);
+      font-weight: $font-weight-regular;
+      color: $secondary-color;
+      
+    }
+  }
+
+  &__item-text {
+    font-family: $font-primary;
+    font-size: clamp(0.8125rem, 0.725rem + 0.4375vw, 1.25rem);
+    line-height: 20px;
+    
+  }
+
+  @media (min-width: 768px) {
+    &__content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+  }
+    
+    // &__title {
+    //   text-align: center;
+    //   font-size: clamp(5rem, 4.125rem + 4.375vw, 9.375rem);
+      
+    // }
+
+    // &__item::before {
+    //   font-size: clamp(2.1875rem, 2.075rem + 0.5625vw, 2.75rem);
+    // }
+
+    // &__item-title {
+      
+    // }
+
+    // &__item-text {
+      
+    // }
+  }
+
+  @media (min-width: 1200px) {
+    
+    flex-direction: row;
+    &__image {
+      width: 90%;
+      height: auto;
+      min-height: 100%;
+      
+    }
+
+    
+    &__content {
+        padding-left: 40px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    // &__title {
+    //   font-size: clamp(5rem, 4.125rem + 4.375vw, 9.375rem);
+    // }
+
+    // &__item::before {
+    //   font-size: clamp(2.1875rem, 2.075rem + 0.5625vw, 2.75rem);
+    // }
+
+    // &__item-title {
+      
+    // }
+
+    // &__item-text {
+      
+    // }
+  }
+}
