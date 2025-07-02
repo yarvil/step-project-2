@@ -1,17 +1,21 @@
 .my-clients {
   background-color: $bg-primary;
-  
+  border-top: 1px solid $primary-color;
 
   &__title {
-    font-size: clamp(3rem, 2rem + 4vw, 6rem);
-    font-family: $font-secondary;
-    font-weight: $font-weight-light;
-    text-align: center;
-    color: $primary-color;
-    margin-bottom: 60px;
-    border-top: 1px solid $primary-color;
-    padding-top: 30px;
+    white-space: nowrap;
+    
+    margin-block: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-align: center;
+  font-size: clamp(3.1875rem, 0.9375rem + 11.25vw, 9.375rem);
+
+  @media (min-width: 1200px) {
+    margin-block: 50px;
+    font-size: clamp(7.8125rem, -1.1458rem + 11.9444vw, 13.1875rem);
   }
+}
 
   &__grid {
     
@@ -20,6 +24,7 @@
 
     @media (min-width: 1200px) {
       grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 80px;
     }
   }
 
@@ -65,26 +70,27 @@
   &__logo {
     width: 120px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   &__heading {
     font-family: $font-secondary;
-    font-size: 1.25rem;
+    font-size: clamp(1.375rem, 1.15rem + 1.125vw, 2.5rem);
     font-weight: $font-weight-bold;
-    margin-bottom: 12px;
+    margin-bottom: 30px;
     color: $primary-color;
   }
 
   &__text {
     font-family: $font-primary;
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.65rem + 0.5vw, 1.25rem);
     color: $primary-color;
     flex-grow: 1;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   &__person {
+    margin-bottom: 16px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -106,7 +112,7 @@
 
   &__role {
     font-family: $font-primary;
-    font-size: 0.875rem;
+    font-size: clamp(0.6875rem, 0.575rem + 0.5625vw, 1.25rem);
     margin: 0;
     color: $primary-color;
   }
