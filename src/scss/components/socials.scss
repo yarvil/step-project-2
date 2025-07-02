@@ -1,0 +1,24 @@
+.socials {
+  display: flex;
+  column-gap: 10px;
+}
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &--facebook {
+    background-image: url(../images/socials/facebook_black.svg);
+  }
+  &--twitter {
+    background-image: url(../images/socials/twitter_black.svg);
+  }
+  &--linkedin {
+    background-image: url(../images/socials/linkedin_black.svg);
+  }
+  &--dribble {
+    background-image: url(../images/socials/dribble_black.svg);
+  }
+}

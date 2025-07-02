@@ -1,3 +1,7 @@
+.logos {
+  border-bottom: 1px solid $primary-color;
+}
+
 .logos__container {
   padding-block: 30px;
   display: flex;
@@ -5,7 +9,6 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  border-bottom: 1px solid $primary-color;
 
   @media (min-width: 768px) {
     padding-block: 40px;
