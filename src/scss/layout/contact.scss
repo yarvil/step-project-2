@@ -1,0 +1,59 @@
+.contact {
+  background-color: $bg-primary;
+  color: $primary-color;
+  border-top: 1px solid $primary-color;
+  border-bottom: 1px solid $primary-color;
+  padding: 60px 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  &__title {
+    font-size: clamp(3.5625rem, 2.4rem + 5.8125vw, 9.375rem);
+    font-family: $font-secondary;
+    font-weight: $font-weight-light;
+    margin: 0 auto;
+  }
+
+  &__content {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__heading {
+    font-family: $font-secondary;
+    font-weight: $font-weight-bold;
+    font-size: clamp(1.625rem, 0.2411rem + 6.9196vw, 3.5625rem);
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-family: $font-primary;
+    font-size: clamp(1.1875rem, 1rem + 0.9375vw, 2.125rem);
+    line-height: 1.5;
+  }
+
+  @media (min-width: 1200px) {
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+
+    &__title {
+      flex: 1;
+    }
+
+    &__content {
+      flex: 2;
+      align-items: flex-start;
+    }
+  }
+}
