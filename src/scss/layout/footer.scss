@@ -1,0 +1,32 @@
+.footer {
+  background-color: $bg-primary;
+  color: $copyright-color;
+  padding: 20px 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  &__copyright {
+    font-size: clamp(0.75rem, 0.675rem + 0.375vw, 1.125rem);
+    font-family: $font-primary;
+
+    strong {
+      font-weight: $font-weight-bold;
+      color: $primary-color;
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    &__container {
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+}
